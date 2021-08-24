@@ -1,0 +1,120 @@
+:root{
+    --main-color: #ffcc00;
+    --main-color-light: rgb(92, 155, 80);
+    --accent-color: rgb(17, 199, 0);
+    --accent-color-light: rgb(26, 188, 156, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right bottom, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.header, .gorev-form{
+    min-height: 20vh;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.main-title{
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+}
+
+.gorev-form{
+    transition: 1s ease-in-out;
+}
+
+.gorev-form:hover{
+    transform: scale(1.1);
+}
+.form-item{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+    background-color: white;
+    outline: none;;
+}
+
+.btn-gorev-ekle{
+    color: var(--accent-color);
+    cursor: pointer;
+
+}
+.btn-gorev-ekle:hover{
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+}
+
+.gorev-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9rem;
+    font-size: 1.2rem;
+    background-color: white;
+    transition: 1s ease-out;
+}
+
+.gorev-item:hover{
+    transform: scale(1.080);
+}
+
+.gorev-tanim{
+    flex:1;
+    padding: 0.8rem;
+}
+
+.gorev-btn{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 0rem;
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: white;
+}
+.gorev-btn:hover{
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.gorev-btn-sil{
+    color: crimson
+}
+.gorev-btn-sil:hover{
+    color: white;
+    background-color: crimson
+}
+
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.far{
+    pointer-events: none;
+}
+
+li{
+    font-family: 'Urbanist', sans-serif;
+}
